@@ -39,12 +39,10 @@ public class Jugadores {
 	 * @throws JugadorNoExisteException 
 	 * @param nombre, del jugador que se desea borrar
 	 * */
-	void borrarJugador(String nombre) throws JugadorNoExisteException, NombreNoValidoException{
+	void borrar(String nombre) throws JugadorNoExisteException, NombreNoValidoException{
 		Jugador jugador = new Jugador(nombre);
-		if(!jugadores.contains(jugador))
-			throw new JugadorNoExisteException("El jugador no existe.");
-		jugadores.remove(jugadores.indexOf(jugador));
-			
+		if(!jugadores.remove(jugador))
+			throw new JugadorNoExisteException("No se ha podido borrar.");
 	}
 	
 	
