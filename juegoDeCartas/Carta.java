@@ -8,11 +8,11 @@ public class Carta {
 	/**
 	 * Enumerador que constara de las figuras
 	 * */
-	public EnumFigura figura;
+	private EnumFigura figura;
 	/**
 	 * Enumerador que constara de los palos
 	 * */
-	public EnumPalo palo;
+	private EnumPalo palo;
 	
 	/**
 	 * Constructor que asignara a cada uno de los palos y figuras su valor correspondiente dependiendo de la carta generada.
@@ -55,7 +55,7 @@ public class Carta {
 	/**
 	 * @return valor de la carta
 	 * */
-	double getValorCarta(){
+	double getValor(){
 		return getFigura().getValor();
 	}
 	
