@@ -97,7 +97,7 @@ public class Partida {
 			limpiarPuntos();//Limpia los puntos de los jugadores para ponerlos a cero
 			do {
 				do {
-					listaJugadores.get(jugador).incremenrarPuntuacion(sacarCarta().getValorCarta());//se encarga de que el jugador al que le toque, tire carta e incremente su puntuacion
+					listaJugadores.get(jugador).incremenrarPuntuacion(sacarCarta().getValor());//se encarga de que el jugador al que le toque, tire carta e incremente su puntuacion
 					
 					System.out.println("Jugado: " + jugando() + " " + puntosDelJugador() + " puntos");
 
