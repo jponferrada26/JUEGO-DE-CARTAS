@@ -92,7 +92,7 @@ public class TestJuegoDeCartas {
 	private static void eliminarJugador() {
 		try {
 			System.out.println(jugadores.toString());
-			jugadores.borrarJugador(Teclado.leerCadena("Nombre:"));//indica el nombre del jugador que se desea borrar
+			jugadores.borrar(Teclado.leerCadena("Nombre:"));//indica el nombre del jugador que se desea borrar
 		} catch (JugadorNoExisteException | NombreNoValidoException e) {
 			System.out.println(e.getMessage());
 		}
@@ -104,7 +104,7 @@ public class TestJuegoDeCartas {
 	 * */
 	private static void annadirJugador() {
 		try {
-			jugadores.annadirJugador(Teclado.leerCadena("Nombre:"));//indica el nombre del jugador que se desea añadir
+			jugadores.annadir(Teclado.leerCadena("Nombre:"));//indica el nombre del jugador que se desea añadir
 		} catch (NombreNoValidoException | JugadorYaExisteException e) {
 			System.out.println(e.getMessage());
 		}
