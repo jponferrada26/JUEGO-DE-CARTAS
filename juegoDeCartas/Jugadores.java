@@ -24,7 +24,7 @@ public class Jugadores {
 	 * @throws JugadorYaExisteException 
 	 * @param nombre, del jugador que se desea annadir a la lista de jugadores
 	 * */
-	void annadirJugador(String nombre) throws JugadorYaExisteException, NombreNoValidoException{
+	void annadir(String nombre) throws JugadorYaExisteException, NombreNoValidoException{
 		Jugador jugador = new Jugador(nombre);
 		if(jugadores.contains(jugador))
 			throw new JugadorYaExisteException("El jugador Ya se encuentra en la lista.");
